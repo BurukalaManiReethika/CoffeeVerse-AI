@@ -25,6 +25,29 @@ line-height:1.6;
 html{
 scroll-behavior:smooth;
 }
+.loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0b0f19;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+.coffee-loader{
+font-size:100px;
+animation:spin 2s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
 
 
 
