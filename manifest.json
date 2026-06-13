@@ -1,0 +1,16 @@
+{
+"name":"CoffeeVerse AI",
+"short_name":"CoffeeVerse",
+"start_url":"./index.html",
+"display":"standalone",
+"background_color":"#0b0f19",
+"theme_color":"#ffb347",
+"description":"Premium Coffee Shop Website",
+"icons":[
+{
+"src":"icon.png",
+"sizes":"192x192",
+"type":"image/png"
+}
+]
+}
