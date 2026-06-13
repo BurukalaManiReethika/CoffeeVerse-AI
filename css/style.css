@@ -49,7 +49,16 @@ transform:rotate(360deg);
 }
 }
 
-
+.cursor{
+width:25px;
+height:25px;
+border-radius:50%;
+background:#ffb347;
+position:fixed;
+pointer-events:none;
+z-index:9999;
+mix-blend-mode:difference;
+}
 
 .navbar{
 position:fixed;
