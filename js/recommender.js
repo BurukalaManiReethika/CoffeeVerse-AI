@@ -11,37 +11,44 @@ recommendBtn.addEventListener(
 const taste =
 document.getElementById("taste").value;
 
-let recommendation =
-"";
+let coffee = "";
 
-switch(taste){
+if(taste === "strong"){
 
-case "strong":
-recommendation =
-"☕ Espresso — Bold, rich and powerful.";
-break;
+coffee =
+"☕ Espresso - Intense and bold.";
 
-case "sweet":
-recommendation =
-"🍫 Mocha — Chocolate lovers' favorite.";
-break;
-
-case "cold":
-recommendation =
-"🧊 Cold Brew — Smooth and refreshing.";
-break;
-
-case "balanced":
-recommendation =
-"🥛 Latte — Perfect balance of coffee and milk.";
-break;
-
-default:
-recommendation =
-"⚠ Please select a taste.";
 }
 
-result.innerHTML =
-recommendation;
+else if(taste === "sweet"){
+
+coffee =
+"🍫 Mocha - Sweet chocolate delight.";
+
+}
+
+else if(taste === "cold"){
+
+coffee =
+"🧊 Cold Brew - Smooth and refreshing.";
+
+}
+
+else if(taste === "balanced"){
+
+coffee =
+"🥛 Latte - Perfect balance.";
+
+}
+
+else{
+
+coffee =
+"Please select a preference.";
+
+}
+
+result.innerHTML = coffee;
 
 });
+
