@@ -519,3 +519,37 @@ grid-template-columns:1fr;
 }
 
 }
+.featured-drinks{
+padding:120px 8%;
+text-align:center;
+}
+
+.featured-drinks h2{
+font-size:3rem;
+margin-bottom:50px;
+}
+
+.drink-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.drink-card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:25px;
+transition:.4s;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.drink-card:hover{
+transform:translateY(-12px);
+}
+
+.drink-card span{
+font-size:3rem;
+display:block;
+margin-bottom:15px;
+}
