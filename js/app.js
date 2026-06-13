@@ -107,6 +107,38 @@ loader.style.display="none";
 });
 
 }
+const input =
+document.getElementById("userInput");
+
+input.addEventListener(
+"keydown",
+e=>{
+
+if(e.key==="Enter"){
+
+const text=input.value;
+
+let reply="";
+
+if(text.includes("strong")){
+reply="☕ Espresso";
+}
+else if(text.includes("sweet")){
+reply="🍫 Mocha";
+}
+else{
+reply="🥛 Latte";
+}
+
+document.querySelector(
+".messages"
+).innerHTML +=
+"<br><br>"+reply;
+
+input.value="";
+}
+
+});
 const cursor =
 document.querySelector(".cursor");
 
