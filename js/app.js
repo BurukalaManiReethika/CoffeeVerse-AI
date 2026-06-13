@@ -159,3 +159,18 @@ cursor.style.top =
 e.clientY + "px";
 
 });
+const music=
+document.getElementById("cafeAudio");
+
+document
+.getElementById("musicBtn")
+.onclick=()=>{
+
+if(music.paused){
+music.play();
+}
+else{
+music.pause();
+}
+
+};
