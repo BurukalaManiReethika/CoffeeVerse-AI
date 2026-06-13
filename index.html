@@ -1,0 +1,439 @@
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CoffeeVerse AI</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+☕ CoffeeVerse
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#story">Story</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button id="themeToggle">
+🌙
+</button>
+
+<button class="reserve-btn">
+Reserve
+</button>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+Crafting
+<span>Coffee</span>
+Experiences
+</h1>
+
+<p>
+Premium handcrafted coffee made
+from ethically sourced beans.
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary-btn">
+Explore Menu
+</button>
+
+<button class="secondary-btn">
+Watch Story
+</button>
+
+</div>
+
+</div>
+
+<div class="floating-cup">
+☕
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>K Cups Served</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="25">0</h2>
+
+<p>Coffee Types</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="4.9">0</h2>
+
+<p>Customer Rating</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="12">0</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu" class="menu">
+
+<div class="section-title">
+
+<h2>Signature Collection</h2>
+
+<p>Handpicked favorites</p>
+
+</div>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+
+<div class="menu-icon">☕</div>
+
+<h3>Espresso</h3>
+
+<p>
+Rich intense coffee shot.
+</p>
+
+<span>₹149</span>
+
+</div>
+
+<div class="menu-card">
+
+<div class="menu-icon">🥛</div>
+
+<h3>Latte</h3>
+
+<p>
+Creamy milk perfection.
+</p>
+
+<span>₹199</span>
+
+</div>
+
+<div class="menu-card">
+
+<div class="menu-icon">🍫</div>
+
+<h3>Mocha</h3>
+
+<p>
+Chocolate infused delight.
+</p>
+
+<span>₹249</span>
+
+</div>
+
+<div class="menu-card">
+
+<div class="menu-icon">🧊</div>
+
+<h3>Cold Brew</h3>
+
+<p>
+Smooth cold extraction.
+</p>
+
+<span>₹299</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AI RECOMMENDER -->
+
+<section class="ai-section">
+
+<div class="section-title">
+
+<h2>AI Coffee Recommender</h2>
+
+<p>
+Choose your mood
+</p>
+
+</div>
+
+<div class="recommender">
+
+<select id="taste">
+
+<option value="">
+Select Taste
+</option>
+
+<option value="strong">
+Strong
+</option>
+
+<option value="sweet">
+Sweet
+</option>
+
+<option value="cold">
+Cold
+</option>
+
+<option value="balanced">
+Balanced
+</option>
+
+</select>
+
+<button id="recommendBtn">
+Recommend
+</button>
+
+<div id="result">
+
+Your recommendation appears here...
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STORY -->
+
+<section id="story" class="timeline">
+
+<div class="section-title">
+
+<h2>Bean Journey</h2>
+
+<p>
+From farm to cup
+</p>
+
+</div>
+
+<div class="timeline-container">
+
+<div class="timeline-item">
+
+<h3>🌱 Farm</h3>
+
+<p>
+Organic coffee plantations.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>🔥 Roast</h3>
+
+<p>
+Expert roasting process.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>⚙ Grind</h3>
+
+<p>
+Precision grinding.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>☕ Brew</h3>
+
+<p>
+Perfect extraction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="reviews">
+
+<div class="section-title">
+
+<h2>What Customers Say</h2>
+
+</div>
+
+<div class="review-slider">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+Best coffee experience ever.
+</p>
+
+<h4>
+Rahul
+</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+Beautiful atmosphere.
+</p>
+
+<h4>
+Priya
+</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+Loved the cold brew.
+</p>
+
+<h4>
+Arjun
+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+</div>
+
+<form id="contactForm">
+
+<input
+type="text"
+placeholder="Name"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<textarea
+placeholder="Message"
+required>
+</textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>
+CoffeeVerse AI
+</h3>
+
+<p>
+Crafted with passion & caffeine.
+</p>
+
+<div class="socials">
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-github"></i>
+
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/recommender.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>
