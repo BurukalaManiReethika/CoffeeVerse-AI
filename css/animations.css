@@ -1,0 +1,396 @@
+
+
+@keyframes float {
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(50px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* =========================
+   FADE IN
+========================= */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+/* =========================
+   SLIDE LEFT
+========================= */
+
+@keyframes slideLeft{
+
+from{
+opacity:0;
+transform:translateX(60px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/* =========================
+   SLIDE RIGHT
+========================= */
+
+@keyframes slideRight{
+
+from{
+opacity:0;
+transform:translateX(-60px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+
+@keyframes glow{
+
+0%{
+box-shadow:0 0 5px #ffb347;
+}
+
+50%{
+box-shadow:
+0 0 20px #ffb347,
+0 0 40px #ff7b00;
+}
+
+100%{
+box-shadow:0 0 5px #ffb347;
+}
+
+}
+
+
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+
+@keyframes rotateCoffee{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+
+.hero-content h1{
+animation:fadeUp 1s ease;
+}
+
+.hero-content p{
+animation:fadeUp 1.4s ease;
+}
+
+.hero-buttons{
+animation:fadeUp 1.8s ease;
+}
+
+
+
+.primary-btn:hover{
+
+animation:pulse .8s infinite;
+
+}
+
+.reserve-btn:hover{
+
+animation:glow 1.5s infinite;
+
+}
+
+#contactForm button:hover{
+
+animation:glow 1.5s infinite;
+
+}
+
+
+
+.menu-card{
+
+animation:fadeIn 1s ease;
+
+}
+
+.menu-card:hover{
+
+transform:
+translateY(-15px)
+scale(1.03);
+
+}
+
+
+
+.timeline-item:nth-child(odd){
+
+animation:slideLeft 1s ease;
+
+}
+
+.timeline-item:nth-child(even){
+
+animation:slideRight 1s ease;
+
+}
+
+
+.review-card{
+
+transition:.4s;
+
+}
+
+.review-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.4);
+
+}
+
+
+
+.socials i:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+#result{
+
+animation:fadeIn 1s ease;
+
+}
+
+
+.loader{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#0b0f19;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.loader .coffee{
+
+font-size:80px;
+
+animation:
+rotateCoffee 2s linear infinite;
+
+}
+
+
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+.stat-card:hover,
+.review-card:hover,
+.timeline-item:hover{
+
+backdrop-filter:blur(30px);
+
+}
+
+
+.navbar{
+
+transition:.4s;
+
+}
+
+.navbar.scrolled{
+
+background:
+rgba(0,0,0,.75);
+
+backdrop-filter:
+blur(20px);
+
+}
+
+
+
+.hero h1 span{
+
+background:
+linear-gradient(
+90deg,
+#ffb347,
+#ff7b00,
+#ffd27a,
+#ffb347
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:textShine 5s linear infinite;
+
+}
+
+@keyframes textShine{
+
+0%{
+background-position:0%;
+}
+
+100%{
+background-position:300%;
+}
+
+}
+
+
+
+.bean{
+
+position:absolute;
+
+font-size:20px;
+
+animation:
+beanFloat 12s linear infinite;
+
+opacity:.4;
+
+}
+
+@keyframes beanFloat{
+
+0%{
+
+transform:
+translateY(100vh)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(-100px)
+rotate(720deg);
+
+}
+
+}
+
+
+
+.hero{
+
+animation:
+heroZoom 20s linear infinite alternate;
+
+}
+
+@keyframes heroZoom{
+
+from{
+background-size:100%;
+}
+
+to{
+background-size:115%;
+}
+
+}
