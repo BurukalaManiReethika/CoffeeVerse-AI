@@ -1,23 +1,86 @@
-const navbar = document.querySelector(".navbar");
+// =======================
+// NAVBAR SCROLL
+// =======================
+
+const navbar =
+document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 50){
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
+if(navbar){
 
-});
-particlesJS("particles-js",{
-particles:{
-number:{value:80},
-size:{value:3},
-move:{speed:2}
+if(window.scrollY > 50){
+
+navbar.classList.add("scrolled");
+
+}else{
+
+navbar.classList.remove("scrolled");
+
 }
+
+}
+
 });
 
+// =======================
+// LOADER
+// =======================
 
+window.addEventListener("load", () => {
+
+const loader =
+document.querySelector(".loader");
+
+if(loader){
+
+loader.style.opacity = "0";
+
+setTimeout(() => {
+
+loader.style.display = "none";
+
+},1000);
+
+}
+
+});
+
+// =======================
+// PARTICLES
+// =======================
+
+if(typeof particlesJS !== "undefined"){
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{
+value:80
+},
+
+size:{
+value:3
+},
+
+move:{
+speed:2
+},
+
+line_linked:{
+enable:true
+}
+
+}
+
+});
+
+}
+
+// =======================
+// CONTACT FORM
+// =======================
 
 const contactForm =
 document.getElementById("contactForm");
@@ -31,7 +94,7 @@ contactForm.addEventListener(
 e.preventDefault();
 
 alert(
-"☕ Thank you! Your message has been sent."
+"☕ Message Sent Successfully!"
 );
 
 contactForm.reset();
@@ -40,12 +103,13 @@ contactForm.reset();
 
 }
 
-
-
+// =======================
+// SCROLL REVEAL
+// =======================
 
 const reveals =
 document.querySelectorAll(
-".menu-card,.stat-card,.timeline-item,.review-card"
+".menu-card,.drink-card,.stat-card,.timeline-item,.review-card,.dashboard-card,.achievement-card"
 );
 
 function revealElements(){
@@ -55,10 +119,10 @@ reveals.forEach(item=>{
 const top =
 item.getBoundingClientRect().top;
 
-const height =
+const windowHeight =
 window.innerHeight;
 
-if(top < height - 100){
+if(top < windowHeight - 100){
 
 item.classList.add("active");
 
@@ -75,8 +139,9 @@ revealElements
 
 revealElements();
 
-
-
+// =======================
+// EXPLORE MENU
+// =======================
 
 const exploreBtn =
 document.querySelector(".primary-btn");
@@ -87,65 +152,147 @@ exploreBtn.addEventListener(
 "click",
 ()=>{
 
-document
-.getElementById("menu")
-.scrollIntoView({
+const menu =
+document.getElementById("menu");
+
+if(menu){
+
+menu.scrollIntoView({
 behavior:"smooth"
 });
-window.addEventListener("load",()=>{
 
-const loader =
-document.querySelector(".loader");
-
-setTimeout(()=>{
-
-loader.style.opacity="0";
-
-setTimeout(()=>{
-loader.style.display="none";
-},500);
-
-},2000);
-
-});    
+}
 
 });
 
 }
-const input =
+
+// =======================
+// AI RECOMMENDER
+// =======================
+
+const recommendBtn =
+document.getElementById("recommendBtn");
+
+const result =
+document.getElementById("result");
+
+if(recommendBtn && result){
+
+recommendBtn.addEventListener(
+"click",
+()=>{
+
+const taste =
+document.getElementById("taste").value;
+
+let coffee = "";
+
+switch(taste){
+
+case "strong":
+coffee =
+"☕ Espresso — Bold & Powerful";
+break;
+
+case "sweet":
+coffee =
+"🍫 Mocha — Sweet Chocolate Delight";
+break;
+
+case "cold":
+coffee =
+"🧊 Cold Brew — Refreshing";
+break;
+
+case "balanced":
+coffee =
+"🥛 Latte — Perfect Balance";
+break;
+
+default:
+coffee =
+"Select your preference ☕";
+
+}
+
+result.innerHTML =
+coffee;
+
+});
+
+}
+
+// =======================
+// AI BARISTA
+// =======================
+
+const userInput =
 document.getElementById("userInput");
 
-input.addEventListener(
+const messages =
+document.querySelector(".messages");
+
+if(userInput && messages){
+
+userInput.addEventListener(
 "keydown",
 e=>{
 
-if(e.key==="Enter"){
+if(e.key === "Enter"){
 
-const text=input.value;
+const text =
+userInput.value.toLowerCase();
 
-let reply="";
+let reply = "";
 
 if(text.includes("strong")){
-reply="☕ Espresso";
+
+reply =
+"☕ Espresso is perfect for you.";
+
 }
 else if(text.includes("sweet")){
-reply="🍫 Mocha";
+
+reply =
+"🍫 Try our Mocha.";
+
+}
+else if(text.includes("cold")){
+
+reply =
+"🧊 Cold Brew recommended.";
+
 }
 else{
-reply="🥛 Latte";
+
+reply =
+"🥛 Latte is always a great choice.";
+
 }
 
-document.querySelector(
-".messages"
-).innerHTML +=
-"<br><br>"+reply;
+messages.innerHTML +=
+"<br><br><b>You:</b> "
++ userInput.value +
+"<br><b>AI:</b> "
++ reply;
 
-input.value="";
+userInput.value = "";
+
 }
 
 });
+
+}
+
+// =======================
+// CUSTOM CURSOR
+// =======================
+
 const cursor =
 document.querySelector(".cursor");
+
+if(cursor){
 
 document.addEventListener(
 "mousemove",
@@ -158,33 +305,65 @@ cursor.style.top =
 e.clientY + "px";
 
 });
-const music=
+
+}
+
+// =======================
+// MUSIC PLAYER
+// =======================
+
+const musicBtn =
+document.getElementById("musicBtn");
+
+const music =
 document.getElementById("cafeAudio");
 
-document
-.getElementById("musicBtn")
-.onclick=()=>{
+if(musicBtn && music){
+
+musicBtn.addEventListener(
+"click",
+()=>{
 
 if(music.paused){
+
 music.play();
-}
-else{
+
+musicBtn.innerHTML =
+"🔇 Stop Music";
+
+}else{
+
 music.pause();
+
+musicBtn.innerHTML =
+"🎵 Café Sounds";
+
 }
-
-};
-window.addEventListener("load", () => {
-
-  const loader = document.querySelector(".loader");
-
-  if(loader){
-
-    loader.style.opacity = "0";
-
-    setTimeout(() => {
-      loader.remove();
-    }, 1000);
-
-  }
 
 });
+
+}
+
+// =======================
+// LIVE STATS
+// =======================
+
+const cupsToday =
+document.getElementById("cupsToday");
+
+const visitors =
+document.getElementById("visitors");
+
+if(cupsToday && visitors){
+
+setInterval(()=>{
+
+cupsToday.innerText =
+Number(cupsToday.innerText)+1;
+
+visitors.innerText =
+Number(visitors.innerText)+2;
+
+},5000);
+
+}
