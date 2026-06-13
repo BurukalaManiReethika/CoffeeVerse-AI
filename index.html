@@ -1,6 +1,8 @@
+
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,43 +10,73 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animations.css">
-  <div id="particles-js"></div>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 </head>
-  <div class="bean">☕</div>
-<div class="bean">☕</div>
-<div class="bean">☕</div>
-<div class="bean">☕</div>
-<div class="bean">☕</div>
 
 <body>
-  <div class="loader">
-    <div class="coffee-loader">
-        ☕
-    </div>
+
+<!-- PARTICLES -->
+
+<div id="particles-js"></div>
+
+<!-- LOADER -->
+
+<div class="loader">
+
+<div class="coffee-loader">
+☕
 </div>
 
+</div>
+
+<!-- CUSTOM CURSOR -->
+
 <div class="cursor"></div>
+
+<!-- FLOATING BEANS -->
+
+<div class="bean">☕</div>
+<div class="bean">☕</div>
+<div class="bean">☕</div>
+<div class="bean">☕</div>
+<div class="bean">☕</div>
+
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
 <div class="logo">
-☕ CoffeeVerse
+☕ CoffeeVerse AI
 </div>
 
 <ul class="nav-links">
 
-<li><a href="#home">Home</a></li>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#story">Story</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#menu">Menu</a>
+</li>
+
+<li>
+<a href="#story">Story</a>
+</li>
+
+<li>
+<a href="#reviews">Reviews</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
 
 </ul>
 
@@ -62,32 +94,46 @@ Reserve
 
 </nav>
 
-<section class="hero">
+<!-- HERO -->
 
-<video autoplay muted loop playsinline class="hero-video">
-    <source src="assets/videos/coffee.mp4" type="video/mp4">
+<section
+id="home"
+class="hero">
+
+<video
+autoplay
+muted
+loop
+playsinline
+class="hero-video">
+
+<source
+src="assets/videos/coffee.mp4"
+type="video/mp4">
+
 </video>
 
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
-    <h1>Crafted For Dreamers</h1>
-    <p>Every Cup Tells A Story.</p>
-</div>
-
-</section>
-
-
 
 <h1>
+
 Crafting
-<span>Coffee</span>
+
+<span>
+Coffee
+</span>
+
 Experiences
+
 </h1>
 
 <p>
-Premium handcrafted coffee made
-from ethically sourced beans.
+
+Premium handcrafted coffee
+made from ethically sourced beans.
+
 </p>
 
 <div class="hero-buttons">
@@ -109,72 +155,149 @@ Watch Story
 </div>
 
 </section>
+<!-- FEATURED DRINKS -->
 
 <section class="featured-drinks">
 
-<h2>Most Loved Drinks</h2>
+<div class="section-title">
+
+<h2>
+Most Loved Drinks
+</h2>
+
+<p>
+Our customers' favorites
+</p>
+
+</div>
 
 <div class="drink-grid">
 
 <div class="drink-card">
-<span>☕</span>
-<h3>Espresso</h3>
-<p>Bold & Rich Flavor</p>
+
+<div class="drink-icon">
+☕
+</div>
+
+<h3>
+Espresso
+</h3>
+
+<p>
+Bold and rich flavor for coffee lovers.
+</p>
+
 </div>
 
 <div class="drink-card">
-<span>🥛</span>
-<h3>Latte</h3>
-<p>Smooth & Creamy</p>
+
+<div class="drink-icon">
+🥛
+</div>
+
+<h3>
+Latte
+</h3>
+
+<p>
+Smooth milk and espresso perfection.
+</p>
+
 </div>
 
 <div class="drink-card">
-<span>🍫</span>
-<h3>Mocha</h3>
-<p>Chocolate Coffee Blend</p>
+
+<div class="drink-icon">
+🍫
+</div>
+
+<h3>
+Mocha
+</h3>
+
+<p>
+Chocolate infused coffee delight.
+</p>
+
 </div>
 
 <div class="drink-card">
-<span>🧊</span>
-<h3>Cold Brew</h3>
-<p>Refreshing Taste</p>
+
+<div class="drink-icon">
+🧊
+</div>
+
+<h3>
+Cold Brew
+</h3>
+
+<p>
+Refreshing cold extracted coffee.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- STATS -->
+
 <section class="stats">
 
 <div class="stat-card">
 
-<h2 class="counter" data-target="100">0</h2>
+<h2
+class="counter"
+data-target="150">
+0
+</h2>
 
-<p>K Cups Served</p>
-
-</div>
-
-<div class="stat-card">
-
-<h2 class="counter" data-target="25">0</h2>
-
-<p>Coffee Types</p>
+<p>
+K+ Cups Served
+</p>
 
 </div>
 
 <div class="stat-card">
 
-<h2 class="counter" data-target="4.9">0</h2>
+<h2
+class="counter"
+data-target="50">
+0
+</h2>
 
-<p>Customer Rating</p>
+<p>
+Coffee Recipes
+</p>
 
 </div>
 
 <div class="stat-card">
 
-<h2 class="counter" data-target="12">0</h2>
+<h2
+class="counter"
+data-target="12">
+0
+</h2>
 
-<p>Years Experience</p>
+<p>
+Years Experience
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2
+class="counter"
+data-target="5">
+0
+</h2>
+
+<p>
+Star Rating
+</p>
 
 </div>
 
@@ -182,13 +305,19 @@ Watch Story
 
 <!-- MENU -->
 
-<section id="menu" class="menu">
+<section
+id="menu"
+class="menu">
 
 <div class="section-title">
 
-<h2>Signature Collection</h2>
+<h2>
+Signature Collection
+</h2>
 
-<p>Handpicked favorites</p>
+<p>
+Handcrafted specialty drinks
+</p>
 
 </div>
 
@@ -196,128 +325,30 @@ Watch Story
 
 <div class="menu-card">
 
-<div class="menu-icon">☕</div>
+<div class="menu-icon">
+☕
+</div>
 
-<h3>Espresso</h3>
+<h3>
+Espresso
+</h3>
 
 <p>
-Rich intense coffee shot.
-</p>
+Rich intense coffee
+  <!-- STORY SECTION -->
 
-<span>₹149</span>
-
-</div>
-
-<div class="menu-card">
-
-<div class="menu-icon">🥛</div>
-
-<h3>Latte</h3>
-
-<p>
-Creamy milk perfection.
-</p>
-
-<span>₹199</span>
-
-</div>
-
-<div class="menu-card">
-
-<div class="menu-icon">🍫</div>
-
-<h3>Mocha</h3>
-
-<p>
-Chocolate infused delight.
-</p>
-
-<span>₹249</span>
-
-</div>
-
-<div class="menu-card">
-
-<div class="menu-icon">🧊</div>
-
-<h3>Cold Brew</h3>
-
-<p>
-Smooth cold extraction.
-</p>
-
-<span>₹299</span>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- AI RECOMMENDER -->
-
-<section class="ai-section">
+<section
+id="story"
+class="timeline">
 
 <div class="section-title">
 
-<h2>AI Coffee Recommender</h2>
+<h2>
+Our Coffee Journey
+</h2>
 
 <p>
-Choose your mood
-</p>
-
-</div>
-
-<div class="recommender">
-
-<select id="taste">
-
-<option value="">
-Select Taste
-</option>
-
-<option value="strong">
-Strong
-</option>
-
-<option value="sweet">
-Sweet
-</option>
-
-<option value="cold">
-Cold
-</option>
-
-<option value="balanced">
-Balanced
-</option>
-
-</select>
-
-<button id="recommendBtn">
-Recommend
-</button>
-
-<div id="result">
-
-Your recommendation appears here...
-
-</div>
-
-</div>
-
-</section>
-
-<!-- STORY -->
-
-<section id="story" class="timeline">
-
-<div class="section-title">
-
-<h2>Bean Journey</h2>
-
-<p>
-From farm to cup
+From farm to your cup
 </p>
 
 </div>
@@ -326,40 +357,64 @@ From farm to cup
 
 <div class="timeline-item">
 
-<h3>🌱 Farm</h3>
+<div class="timeline-icon">
+🌱
+</div>
+
+<h3>
+Bean Selection
+</h3>
 
 <p>
-Organic coffee plantations.
+Premium coffee beans sourced from trusted farms.
 </p>
 
 </div>
 
 <div class="timeline-item">
 
-<h3>🔥 Roast</h3>
+<div class="timeline-icon">
+🔥
+</div>
+
+<h3>
+Roasting
+</h3>
 
 <p>
-Expert roasting process.
+Expert roasting process for maximum flavor.
 </p>
 
 </div>
 
 <div class="timeline-item">
 
-<h3>⚙ Grind</h3>
+<div class="timeline-icon">
+⚙️
+</div>
+
+<h3>
+Grinding
+</h3>
 
 <p>
-Precision grinding.
+Freshly ground before every brew.
 </p>
 
 </div>
 
 <div class="timeline-item">
 
-<h3>☕ Brew</h3>
+<div class="timeline-icon">
+☕
+</div>
+
+<h3>
+Brewing
+</h3>
 
 <p>
-Perfect extraction.
+Perfect extraction for a premium experience.
 </p>
 
 </div>
@@ -370,11 +425,19 @@ Perfect extraction.
 
 <!-- REVIEWS -->
 
-<section id="reviews" class="reviews">
+<section
+id="reviews"
+class="reviews">
 
 <div class="section-title">
 
-<h2>What Customers Say</h2>
+<h2>
+Customer Reviews
+</h2>
+
+<p>
+Loved by coffee enthusiasts
+</p>
 
 </div>
 
@@ -382,42 +445,51 @@ Perfect extraction.
 
 <div class="review-card">
 
+<div class="stars">
 ★★★★★
+</div>
 
 <p>
-Best coffee experience ever.
+The best coffee experience I've ever had.
+The atmosphere is amazing.
 </p>
 
 <h4>
-Rahul
+Rahul Sharma
 </h4>
 
 </div>
 
 <div class="review-card">
 
+<div class="stars">
 ★★★★★
+</div>
 
 <p>
-Beautiful atmosphere.
+Cold Brew is absolutely incredible.
+Highly recommended.
 </p>
 
 <h4>
-Priya
+Priya Reddy
 </h4>
 
 </div>
 
 <div class="review-card">
 
+<div class="stars">
 ★★★★★
+</div>
 
 <p>
-Loved the cold brew.
+Premium quality and beautiful design.
+Loved the AI recommendation feature.
 </p>
 
 <h4>
-Arjun
+Arjun Kumar
 </h4>
 
 </div>
@@ -428,11 +500,19 @@ Arjun
 
 <!-- CONTACT -->
 
-<section id="contact" class="contact">
+<section
+id="contact"
+class="contact">
 
 <div class="section-title">
 
-<h2>Contact Us</h2>
+<h2>
+Contact Us
+</h2>
+
+<p>
+We would love to hear from you
+</p>
 
 </div>
 
@@ -440,91 +520,248 @@ Arjun
 
 <input
 type="text"
-placeholder="Name"
+placeholder="Your Name"
 required>
 
 <input
 type="email"
-placeholder="Email"
+placeholder="Your Email"
 required>
 
 <textarea
-placeholder="Message"
+placeholder="Your Message"
 required>
 </textarea>
 
-<button type="submit">
+<button
+type="submit">
+
 Send Message
+
 </button>
 
 </form>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
 
-<h3>
-CoffeeVerse AI
-</h3>
+<div class="footer-content">
+
+<h2>
+☕ CoffeeVerse AI
+</h2>
 
 <p>
-Crafted with passion & caffeine.
+Crafted with passion, powered by coffee.
 </p>
 
 <div class="socials">
 
+<a href="#">
 <i class="fab fa-instagram"></i>
+</a>
 
+<a href="#">
 <i class="fab fa-github"></i>
+</a>
 
+<a href="#">
 <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
 
 </div>
-  <div class="ai-barista">
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© 2026 CoffeeVerse AI.
+All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+<!-- AI BARISTA -->
+
+<div class="ai-barista">
 
 <button id="chatBtn">
+
 🤖 AI Barista
+
 </button>
 
 <div class="chat-box">
 
 <div class="messages">
-Hello! What coffee mood are you in?
+
+Hello! ☕
+What coffee mood are you in today?
+
 </div>
 
 <input
 type="text"
 id="userInput"
-placeholder="Ask me...">
+placeholder="Ask about coffee...">
 
 </div>
 
 </div>
 
-</footer>
-
-<script src="js/app.js"></script>
-<script src="js/counter.js"></script>
-<script src="js/recommender.js"></script>
-<script src="js/theme.js"></script>
+<!-- MUSIC PLAYER -->
 
 <audio
 id="cafeAudio"
 loop>
 
 <source
-src="assets/audio/cafe.mp3">
+src="assets/audio/cafe.mp3"
+type="audio/mpeg">
 
 </audio>
 
-<button id="musicBtn">
+<button
+id="musicBtn"
+class="music-btn">
+
 🎵 Café Sounds
-</button> 
-  <!-- loader remove -->
-<!--
-<div class="loader">
-☕
+
+</button>
+
+<!-- LIVE DASHBOARD -->
+
+<section class="dashboard">
+
+<div class="section-title">
+
+<h2>
+Live Coffee Stats
+</h2>
+
+<p>
+Real-time café activity
+</p>
+
 </div>
--->
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h3 id="cupsToday">
+1284
+</h3>
+
+<p>
+☕ Cups Today
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3 id="visitors">
+5482
+</h3>
+
+<p>
+👥 Visitors
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+4.9★
+</h3>
+
+<p>
+⭐ Rating
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+Cold Brew
+</h3>
+
+<p>
+🔥 Trending
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="achievements">
+
+<div class="section-title">
+
+<h2>
+Rewards
+</h2>
+
+</div>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+
+🏆 First Visit
+
+</div>
+
+<div class="achievement-card">
+
+🏆 Menu Explorer
+
+</div>
+
+<div class="achievement-card">
+
+🏆 AI Barista User
+
+</div>
+
+<div class="achievement-card">
+
+🏆 Coffee Lover
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/counter.js"></script>
+
+<script src="js/recommender.js"></script>
+
+<script src="js/theme.js"></script>
+
 </body>
 </html>
+  
