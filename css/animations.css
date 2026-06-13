@@ -391,6 +391,50 @@ background-size:100%;
 
 to{
 background-size:115%;
+   
+}
+
+}
+.bean{
+position:fixed;
+font-size:24px;
+opacity:.2;
+pointer-events:none;
+}
+
+.bean:nth-child(1){
+left:10%;
+animation:beanFloat 12s linear infinite;
+}
+
+.bean:nth-child(2){
+left:30%;
+animation:beanFloat 15s linear infinite;
+}
+
+.bean:nth-child(3){
+left:50%;
+animation:beanFloat 10s linear infinite;
+}
+
+.bean:nth-child(4){
+left:70%;
+animation:beanFloat 13s linear infinite;
+}
+
+.bean:nth-child(5){
+left:90%;
+animation:beanFloat 11s linear infinite;
+}
+
+@keyframes beanFloat{
+
+0%{
+transform:translateY(100vh);
+}
+
+100%{
+transform:translateY(-100px);
 }
 
 }
